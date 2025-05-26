@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NewBlogForm() {
   return (
-    <div className="flex flex-col items-center justify-center w-full p-4 sm:p-6">
+    <div className="flex flex-col items-center justify-center w-full p-4 sm:p-6 bg-white">
       <h2 className="text-2xl font-bold mb-6 text-center">Add New Blog</h2>
       <form
         action={createNewBlogPost}

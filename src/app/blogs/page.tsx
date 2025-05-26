@@ -22,7 +22,7 @@ export default async function Blogs() {
                 href={`/blogs/${blog.slug}`}
                 className="text-blue-500 font-medium hover:underline"
               >
-                Read More →
+                Edit
               </Link>
             </div>
           </div>
