@@ -11,7 +11,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
 
   return (
     <div className="flex flex-col items-center justify-center w-full p-4 sm:p-6">
-      <h1 className="text-2xl font-bold mb-6 text-center">Edit Blog</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center text-black">Edit Blog</h1>
       {blogs.map((blog) => (
         <div
           key={blog.id}
@@ -24,20 +24,20 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
           >
             <input type="hidden" name="slug" value={blog.slug} />
             <label className="flex flex-col">
-              <span className="text-sm font-medium mb-1">Title</span>
+              <span className="text-sm font-medium mb-1 text-black">Title</span>
               <input
                 name="title"
                 defaultValue={blog.title}
-                className="border border-gray-300 rounded-lg p-2"
+                className="border border-gray-300 rounded-lg p-2 text-black"
                 placeholder="Enter title"
               />
             </label>
             <label className="flex flex-col">
-              <span className="text-sm font-medium mb-1">Content</span>
+              <span className="text-sm font-medium mb-1 text-black">Content</span>
               <textarea
                 name="content"
                 defaultValue={blog.content}
-                className="border border-gray-300 rounded-lg p-2"
+                className="border border-gray-300 rounded-lg p-2 text-black"
                 placeholder="Enter content"
               />
             </label>

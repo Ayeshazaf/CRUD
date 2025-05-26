@@ -14,7 +14,7 @@ export default async function Blogs() {
             className="bg-white shadow-md rounded-lg p-6 flex flex-col justify-between"
           >
             <div>
-              <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
+              <h2 className="text-xl font-semibold mb-2 text-black">{blog.title}</h2>
               <p className="text-gray-600 mb-4">{blog.content}</p>
             </div>
             <div className="mt-auto">

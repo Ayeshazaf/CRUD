@@ -10,7 +10,7 @@ export default function NewBlogForm() {
         className="flex flex-col gap-4 bg-white shadow-md rounded-lg p-6 w-full max-w-lg"
       >
         <div className="flex flex-col">
-          <label htmlFor="title" className="text-md font-medium mb-1">
+          <label htmlFor="title" className="text-md font-medium mb-1 text-black">
             Title
           </label>
           <input
@@ -18,19 +18,19 @@ export default function NewBlogForm() {
             id="title"
             name="title"
             required
-            className="border border-gray-300 rounded-lg p-2"
+            className="border border-gray-300 rounded-lg p-2 text-black"
             placeholder="Enter title"
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="content" className="text-md font-medium mb-1">
+          <label htmlFor="content" className="text-md font-medium mb-1 text-black">
             Content
           </label>
           <textarea
             id="content"
             name="content"
             required
-            className="border border-gray-300 rounded-lg p-2"
+            className="border border-gray-300 rounded-lg p-2 text-black"
             placeholder="Enter content"
           ></textarea>
         </div>
