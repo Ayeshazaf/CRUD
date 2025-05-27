@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex justify-center gap-4">
           <Link
             href="/newblogform"
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg text-center font-semibold hover:bg-blue-600 w-full sm:w-auto"
+            className="bg-black text-white px-4 py-2 rounded-lg text-center font-semibold hover:bg-blue-600 w-full sm:w-auto"
           >
             Add New Blog
           </Link>

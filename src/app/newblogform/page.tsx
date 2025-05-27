@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NewBlogForm() {
   return (
-    <div className="flex flex-col items-center justify-center w-full p-4 sm:p-6 bg-white">
+    <div className="flex flex-col items-center justify-center w-full p-4 sm:p-6">
       <h2 className="text-2xl font-bold mb-6 text-center">Add New Blog</h2>
       <form
         action={createNewBlogPost}
@@ -37,7 +37,7 @@ export default function NewBlogForm() {
         <div className="flex flex-col sm:flex-row gap-2 mt-4">
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full sm:w-auto"
+            className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600 w-full sm:w-auto"
           >
             Submit
           </button>

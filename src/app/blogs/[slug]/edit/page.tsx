@@ -44,7 +44,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
             <div className="flex flex-col sm:flex-row gap-2 mt-4">
               <button
                 type="submit"
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full sm:w-auto"
+                className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600 w-full sm:w-auto"
               >
                 Update
               </button>

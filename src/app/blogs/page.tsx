@@ -15,14 +15,22 @@ export default async function Blogs() {
           >
             <div>
               <h2 className="text-xl font-semibold mb-2 text-black">{blog.title}</h2>
-              <p className="text-gray-600 mb-4">{blog.content}</p>
+              <p className="text-gray-600 mb-4 line-clamp-2 opacity-80">
+                {blog.content}
+              </p>
             </div>
-            <div className="mt-auto">
+            <div className="mt-auto space-x-6">
               <Link
-                href={`/blogs/${blog.slug}`}
-                className="text-blue-500 font-medium hover:underline"
+                href={`/blogs/${blog.slug}/edit`}
+                className=" bg-black text-white px-4 py-2 rounded hover:bg-blue-600 w-full sm:w-auto"
               >
                 Edit
+              </Link>
+              <Link
+                href={`/blogs/${blog.slug}/readmore`}
+                className="text-black font-medium hover:underline"
+              >
+                Read More →
               </Link>
             </div>
           </div>
